@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #dbe9f1;
+}
+
+header, form {
+    margin: 2rem;
+    text-align: center;
+    min-height: 10vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    height: 2rem;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+form {
+    flex-direction: row;
+}
+
+form input, form button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: #c2c9cb;
+}
+
+form input {
+    border-radius: 0.3rem 0 0 0.3rem;
+    min-width: 20rem;
+}
+
+form button {
+    color: #203A43;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+form button:hover {
+    background-color: #203A43;
+    color: #c2c9cb;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    margin: 2rem;
+    text-align: center;
+
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 30%;
+}
+
+.todo-item {
+    margin: 0.3rem;
+    padding: 0 0 0 0.3rem;
+    min-width: 20rem;
+    background: #c2c9cb;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-content {
+    flex: 1;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+}
+
+.todo-completed, .todo-delete {
+    color: white;
+    background-color: #386473;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.todo-completed {
+    background: rgb(17, 164, 17);
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* Filter buttons */
+.select-all, .select-completed, .select-uncompleted {
+    background-color: #486b77;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0.3rem;
+    min-width: 6rem;
+    font-size: 0.7rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.select-active {
+    background-color: #02a4da;
+}
+
+.todo-hide {
+    display: none;
+}
+
+/* 
+    Important: To avoid actions over the icons, you need to deactive them.
+        Otherwise, when you click on the checked/deleted button, you have to click in the border,
+        or implement the functionality on icons too, which is unnecessary.
+*/
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
