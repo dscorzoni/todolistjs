@@ -2,7 +2,7 @@
 
 This is a simple application developed in HMTL, CSS and Java Script that manages a list of things to do that can be created using a form and managed through delete and completed buttons.
 
-![Todo List App](images/todolistapp.png)
+![Todo List App](images/todolistapp2.png)
 
 ## Functionalities
 
